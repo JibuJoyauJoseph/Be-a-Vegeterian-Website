@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f4ec">
+    <meta name="description" content="Fresh inspiration for vegetarian and vegan cooking, from breakfast to dessert.">
+    <title>Be a Vegetarian — Good food, good mood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Be a Vegetarian home">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>Be a <strong>vegetarian</strong></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#intro">Our table</a>
+        <a href="#breakfast">Breakfast</a>
+        <a href="#lunch">Lunch</a>
+        <a href="#mains">Main meals</a>
+        <a href="#desserts">Desserts</a>
+      </nav>
+      <a class="header-cta" href="#recipes">Find a recipe <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> A little more goodness, every day</p>
+          <h1 id="hero-title">Good food.<br><em>Good mood.</em></h1>
+          <p class="hero-text">Colorful, feel-good recipes for a table full of plants—and everyone who loves a really good meal.</p>
+          <a class="button button-dark" href="#recipes">Explore the recipes <span aria-hidden="true">↓</span></a>
+          <div class="hero-note">
+            <span class="note-sparkle" aria-hidden="true"></span>
+            <span><strong>Made for real life</strong><br>Simple ingredients, joyful plates</span>
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="A colorful grain bowl topped with vegetables">
+          <div class="hero-sticker"><span>100%</span><br>plant<br>happy</div>
+          <div class="hero-caption"><span class="caption-dot"></span> Fresh ideas for every day</div>
+        </div>
+        <div class="hero-side-note" aria-hidden="true">EAT WELL · FEEL GOOD · REPEAT</div>
+      </section>
+
+      <section class="intro section-wrap" id="intro" aria-labelledby="intro-title">
+        <div class="section-heading intro-heading">
+          <p class="eyebrow">A seat for everyone</p>
+          <h2 id="intro-title">Plants on the plate.<br><em>Joy at the table.</em></h2>
+        </div>
+        <div class="intro-copy">
+          <p>Vegetarian food skips meat and fish. Vegan food takes it a step further, leaving out all animal-derived ingredients. Both are delicious ways to explore new flavors, cook with the seasons, and make everyday meals feel a little more intentional.</p>
+          <p>Whether you're just getting curious or already cooking this way, there's no one right path. Start with a meal you love and make it your own.</p>
+        </div>
+        <div class="intro-feature">
+          <span class="feature-icon" aria-hidden="true">✿</span>
+          <h3>Why go plant-forward?</h3>
+          <p>Discover new ingredients, enjoy more colorful meals, and choose a way of eating that feels good for you and the planet.</p>
+        </div>
+        <div class="substitutes">
+          <div class="substitutes-heading">
+            <p class="eyebrow">Easy swaps, big flavor</p>
+            <h3>Your handy little<br>swap list</h3>
+          </div>
+          <div class="swap-list">
+            <div class="swap-item"><span class="swap-from">Dairy milk</span><span class="swap-arrow" aria-hidden="true">→</span><span class="swap-to">Oat, soy, or almond milk</span></div>
+            <div class="swap-item"><span class="swap-from">Butter</span><span class="swap-arrow" aria-hidden="true">→</span><span class="swap-to">Olive oil or plant-based butter</span></div>
+            <div class="swap-item"><span class="swap-from">Eggs in baking</span><span class="swap-arrow" aria-hidden="true">→</span><span class="swap-to">Flaxseed or applesauce</span></div>
+            <div class="swap-item"><span class="swap-from">Minced meat</span><span class="swap-arrow" aria-hidden="true">→</span><span class="swap-to">Lentils, mushrooms, or tofu</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipes section-wrap" id="recipes" aria-labelledby="recipes-title">
+        <div class="recipes-top">
+          <div class="section-heading">
+            <p class="eyebrow">A menu for every moment</p>
+            <h2 id="recipes-title">What's cooking?</h2>
+          </div>
+          <p class="recipes-intro">Pick a plate, find your new favorite, and make it yours.</p>
+        </div>
+        <div class="recipe-filters" role="group" aria-label="Filter recipes by diet">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Everything</button>
+          <button class="filter-button" type="button" data-filter="vegan" aria-pressed="false">Vegan</button>
+          <button class="filter-button" type="button" data-filter="vegetarian" aria-pressed="false">Vegetarian</button>
+        </div>
+
+        <section class="recipe-section" id="breakfast" aria-labelledby="breakfast-title">
+          <div class="category-heading">
+            <div><span class="category-number">01</span><h3 id="breakfast-title">Breakfast &amp; Drinks</h3></div>
+            <p>Slow mornings, bright starts.</p>
+          </div>
+          <div class="recipe-grid" data-category="breakfast"></div>
+        </section>
+        <section class="recipe-section" id="lunch" aria-labelledby="lunch-title">
+          <div class="category-heading">
+            <div><span class="category-number">02</span><h3 id="lunch-title">Lunch &amp; Appetizers</h3></div>
+            <p>Little bites, lovely lunches.</p>
+          </div>
+          <div class="recipe-grid" data-category="lunch"></div>
+        </section>
+        <section class="recipe-section" id="mains" aria-labelledby="mains-title">
+          <div class="category-heading">
+            <div><span class="category-number">03</span><h3 id="mains-title">Main Meals</h3></div>
+            <p>Come hungry, leave happy.</p>
+          </div>
+          <div class="recipe-grid" data-category="mains"></div>
+        </section>
+        <section class="recipe-section" id="desserts" aria-labelledby="desserts-title">
+          <div class="category-heading">
+            <div><span class="category-number">04</span><h3 id="desserts-title">Desserts &amp; Bakes</h3></div>
+            <p>A sweet little something.</p>
+          </div>
+          <div class="recipe-grid" data-category="desserts"></div>
+        </section>
+      </section>
+
+      <section class="closing-banner" aria-label="A note from Be a Vegetarian">
+        <span class="closing-flower" aria-hidden="true">✳</span>
+        <p>Good things grow<br>around the table.</p>
+        <a href="#home" aria-label="Back to top">↑</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">✳</span><span>be a <strong>vegetarian</strong></span></a>
+      <p>A little more color. A lot more joy.</p>
+      <span>Made with plants &amp; love <span aria-hidden="true">♥</span></span>
+    </footer>
+
+    <dialog class="recipe-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Close recipe">×</button>
+      <p class="eyebrow" id="dialog-diet"></p>
+      <h2 id="dialog-title"></h2>
+      <p class="dialog-description" id="dialog-description"></p>
+      <div class="dialog-columns">
+        <section aria-labelledby="ingredients-title">
+          <h3 id="ingredients-title">Ingredients</h3>
+          <ul id="dialog-ingredients"></ul>
+        </section>
+        <section aria-labelledby="method-title">
+          <h3 id="method-title">Method</h3>
+          <ol id="dialog-method"></ol>
+        </section>
+      </div>
+      <p class="dialog-hint">Recipe placeholder — add your own ingredients and preparation steps in <code>script.js</code>.</p>
+    </dialog>
+  </body>
+</html>
